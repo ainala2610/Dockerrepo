@@ -3,6 +3,8 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
+RUN apt-get update
+
 # If you're using a build tool like Vite, React, or Vue:
 # COPY package*.json ./
 # RUN npm install
